@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "KisanSetu Centre Locator",
+    "slug": "kisansetu-centre-locator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "KisanSetu needs your location to show the nearest procurement centre."
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow KisanSetu to use your location to find nearby procurement centres."
+        }
+      ]
+    ]
+  }
+}
